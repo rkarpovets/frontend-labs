@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма та Таблиця</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Реєстраційна форма</h2>
+  <form id="userForm">
+    <div class="form-group">
+      <label for="pib">1. ПІБ (ТТТТТТ Т.Т.)</label>
+      <input type="text" id="pib" placeholder="Прізвище І.І.">
+      <span class="error-text">Формат: Прізвище І.І.</span>
+    </div>
+
+    <div class="form-group">
+      <label for="group">2. Група (ТТ-ЧЧ)</label>
+      <input type="text" id="group" placeholder="АА-12">
+      <span class="error-text">Формат: Дві літери, дефіс, дві цифри</span>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">3. Телефон (ТТ №ЧЧЧЧЧЧ)</label>
+      <input type="text" id="phone" placeholder="AB №123456">
+      <span class="error-text">Формат: Дві літери, пробіл, №, 6 цифр</span>
+    </div>
+
+    <div class="form-group">
+      <label for="address">4. Адреса (м. ЧЧЧЧЧЧЧ)</label>
+      <input type="text" id="address" placeholder="м. 1234567">
+      <span class="error-text">Формат: м. пробіл 7 цифр</span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">5. e-mail (т...т@т...т.com)</label>
+      <input type="text" id="email" placeholder="example@mail.com">
+      <span class="error-text">Формат: text@text.com</span>
+    </div>
+
+    <button type="button" onclick="validateForm()">Перевірити</button>
+  </form>
+</div>
+
+<div class="table-container">
+  <h3>Інтерактивна таблиця (6x6)</h3>
+  <div class="controls">
+    <label for="colorPicker">Колір для кліку:</label>
+    <input type="color" id="colorPicker" value="#00ff00">
+  </div>
+  <table id="gameTable">
+  </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

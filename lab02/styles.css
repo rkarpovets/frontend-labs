@@ -1,0 +1,69 @@
+:root{
+	--size: 200px;
+	--hub: 70px;
+	--tooth-size: 38px;
+	--radius: 90px;
+	--teeth: 8;
+	--step: 45deg;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 500px;
+}
+
+td, th {
+	border: 1px solid #000000;
+	text-align: center;
+	padding: 8px;
+}
+
+.first-row {
+	background-color: #108f8f;
+}
+
+.first-row:hover {
+	background-color: #f5f510;
+}
+
+.second-row {
+	background-color: #f5f510;
+}
+
+.second-row:hover {
+	background-color: #108f8f;
+}
+
+.gear{
+	width: var(--size);
+	height: var(--size);
+	position: relative;
+	margin: 40px auto;
+	background: #a9a9a9;
+	border-radius: 50%;
+}
+
+.gear .hub{
+	position: absolute;
+	width: var(--hub);
+	height: var(--hub);
+	border-radius: 50%;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.gear .tooth{
+	position: absolute;
+	width: var(--tooth-size);
+	height: var(--tooth-size);
+	border-radius: 50%;
+	background: #fff;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(calc(var(--i) * var(--step))) translateY(calc(-1 * var(--radius)));
+	box-shadow: 0 0 0 2px rgba(169,169,169,0.0) inset;
+}

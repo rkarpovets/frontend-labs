@@ -1,0 +1,41 @@
+.my-red-style {
+	background-color: #D32F2F;
+	color: white;
+}
+
+.my-blue-style {
+	background-color: #1976D2;
+	color: white;
+}
+
+#image-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.city-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.controls-box {
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+button {
+	padding: 10px 15px;
+	margin-right: 5px;
+	cursor: pointer;
+	background-color: #f0f0f0;
+	border: 1px solid #999;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+button:hover {
+	background-color: #ddd;
+}
